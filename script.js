@@ -53,7 +53,7 @@ app = Vue.createApp({
         }
     },
     mounted() {
-        alert("You will compete against the computer with a limited moveset and stats. Outsmart your opponent and drain all their health to win.")
+        alert("Battle it out with various pokemon against a computer. Plan out your moves to drain your opponent's health to win.")
     }
 })
 
