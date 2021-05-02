@@ -14,6 +14,7 @@ class Character {
         this.move1 = move1
         this.move2 = move2
         this.move3 = move3
+        this.moves = [move1, move2, move3]
         this.ispoisoned = false
         this.isconfused = false
     }
@@ -49,8 +50,8 @@ class Character {
 app = Vue.createApp({
     data() {
         return {
-            you: undefined,
-            enemy: undefined
+            you: new Character('hello world'),
+            enemy: new Character('your mom')
         }
     },
     mounted() {
