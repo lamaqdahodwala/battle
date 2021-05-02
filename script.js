@@ -1,5 +1,6 @@
 class Move {
-    constructor(dmg, confuses, poisons) {
+    constructor(name, dmg, confuses, poisons) {
+        this.name = name
         this.dmg = dmg
         this.confuses = confuses
         this.poisons = poisons
