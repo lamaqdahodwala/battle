@@ -19,11 +19,25 @@
 					</div>
 					<div class="card-content">
 						<h1 class="subtitle">Moves</h1>
-						<ul class="panel-list">
-							<li>{{ you.move1.name }}</li>
-							<li>{{ you.move2.name }}</li>
-							<li>{{ you.move3.name }}</li>
-						</ul>
+						<table class="table is-bordered">
+							<thead>
+								<tr>
+									<th>Move name</th>
+									<th>Damage</th>
+									<th>Confuses (t/f)</th>
+									<th>Poisons (t/f)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for='move in you.moves'>
+									<th> {{ move.name}}</th>
+									<th>{{ move.dmg }}</th>
+									<th> {{move.poisons}}</th> 
+									<th> {{ move.confuses}}</th>
+								</tr>
+							</tbody>
+						</table>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -33,11 +47,30 @@
 						<h1 class="card-header-title title">{{ enemy.name }}</h1>
 					</div>
 					<div class="card-content">
-						<ul class="panel-list">
-							<li>{{ enemy.move1.name }}</li>
-							<li>{{ enemy.move2.name }}</li>
-							<li>{{ enemy.move3.name }}</li>
-						</ul>
+						<h1 class="subtitle">Moves</h1>
+						<table class="table is-bordered">
+							<thead>
+								<tr>
+									<th>Move name</th>
+									<th>Damage</th>
+									<th>Confuses (t/f)</th>
+									<th>Poisons (t/f)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for='move in enemy.moves'>
+									<th> {{ move.name}}</th>
+									<th>{{ move.dmg }}</th>
+									<th> {{move.poisons}}</th> 
+									<th> {{ move.confuses}}</th>
+								</tr>
+							</tbody>
+							
+								
+									
+								
+							
+						</table>
 					</div>
 				</div>
 			</div>

@@ -50,8 +50,8 @@ class Character {
 app = Vue.createApp({
     data() {
         return {
-            you: new Character('hello world'),
-            enemy: new Character('your mom')
+            you: new Character('hello world', 160, new Move('water shot', 50, false, false,), new Move('bomb', 160, true, false), new Move('super bomb', 2400000, true, true)),
+            enemy: new Character('your mom', 230, new Move('prepare for death', 5000, false, false), new Move("EEEEEEEEE", 5888888888888888888, false, false), new Move("xd", 488842188949821, false, false))
         }
     },
     mounted() {
